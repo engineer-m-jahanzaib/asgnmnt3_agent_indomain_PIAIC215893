@@ -1,0 +1,2 @@
+This is a readme file for a python program communicating with gemini api to discuss with user in a specific domain. 
+The specific domain is "SuccessCoach", a motivational assistant designed to inspire users toward personal growth, goal-setting, and perseverance.
