@@ -6,7 +6,7 @@ from datetime import datetime
 # Load environment variables from .env file
 load_dotenv()
 
-# Your Gemini API Key from the .env file
+# Gemini API Key from the .env file
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 def my_success_coach(prompt):
@@ -17,7 +17,7 @@ def my_success_coach(prompt):
         "Content-Type": "application/json"
     }
 
-    # Sample data to send to the API (customize this if needed)
+    # Sample data to send to the API 
     data = {
         "contents": [
             {
@@ -56,7 +56,7 @@ def my_success_coach(prompt):
         return "Error occurred. Please try again later."
 
 def save_output_to_file(conversation):
-    # Save the conversation to output.md at the root of the project with UTF-8 encoding
+    # Save the conversation to output.md at the root of the project (UTF-8 encoding)
     output_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output.md")
     with open(output_file_path, "w", encoding="utf-8") as file:
         for item in conversation:
